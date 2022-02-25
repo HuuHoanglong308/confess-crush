@@ -12,6 +12,7 @@ $(document).ready(function() {
 })
 
 function init() {
+    $('.contentLate').hide();
     document.getElementById('titleWeb').innerHTML = CONFIG.titleWeb
     $('#title').text(CONFIG.title)
     $('#desc').text(CONFIG.desc)
@@ -33,7 +34,7 @@ function firstQuestion() {
     Swal.fire({
         title: CONFIG.introTitle,
         text: CONFIG.introDesc,
-        imageUrl: 'img/logi.gif',
+        imageUrl: 'img/2.png',
         imageWidth: 300,
         imageHeight: 300,
         background: '#fff url("img/iput-bg.jpg")',
@@ -116,7 +117,7 @@ $('#yes').click(function() {
         html: true,
         width: 900,
         padding: '3em',
-        html: "<input type='text' class='form-control' id='txtReason' onmousemove=textGenerate()  placeholder='Whyyy'>",
+        html: "<input type='text' class='form-control' id='txtReason' onmousemove=textGenerate()  placeholder='Nói gì nhỉ?'>",
         background: '#fff url("img/iput-bg.jpg")',
         backdrop: `
               rgba(0,0,123,0.4)
@@ -124,22 +125,31 @@ $('#yes').click(function() {
               left top
               no-repeat
             `,
+        imageUrl: 'img/3.png',
+        imageWidth: 300,
+        imageHeight: 300,
         confirmButtonColor: '#3085d6',
         confirmButtonColor: '#fe8a71',
         confirmButtonText: CONFIG.btnReply
     }).then((result) => {
         if (result.value) {
-            Swal.fire({
-                width: 900,
-                confirmButtonText: CONFIG.btnAccept,
-                background: '#fff url("img/iput-bg.jpg")',
-                title: CONFIG.mess,
-                text: CONFIG.messDesc,
-                confirmButtonColor: '#83d0c9',
-                onClose: () => {
-                    window.location = CONFIG.messLink;
-                }
-            })
+            last();
         }
     })
 })
+
+function last() {
+    $('.content').hide();
+    $('.contentLate').show();
+    Swal.fire({
+        width: 900,
+        confirmButtonText: CONFIG.btnAccept,
+        background: 'none',
+        title: CONFIG.mess,
+        text: CONFIG.messDesc,
+        confirmButtonColor: '#83d0c9',
+        onClose: () => {
+            window.location = CONFIG.messLink;
+        }
+    })
+}

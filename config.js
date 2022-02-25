@@ -1,20 +1,17 @@
 const CONFIG = {
-    titleWeb: "Tiêu đề web",
-    introTitle: 'DICO <3 ',
-    introDesc: `Trái đất vốn lạ thường
-    Mà sao em cứ đi nhầm đường
-    Lạc vào tim anh lẻ loi
-    Đằng sau chữ yêu đây là thương`,
+    titleWeb: "Web tỏ tình - design by Dico",
+    introTitle: 'Trang <3 ',
+    introDesc: `Em Trang đáng yêu gửi lời tới anh Long ❤ ❤ ❤`,
     btnIntro: '^^HiHi^^',
     title: 'Phải chăng em đã yêu ngay từ cái nhìn đầu tiên 🥰',
     desc: 'Phải chăng em đã say ngay từ lúc thấy nụ cười ấy ',
     btnYes: 'Thích lắm <33',
     btnNo: 'Không nha :3',
-    question: 'Trên thế giới hơn 7 tỉ người mà sao bạn lại yêu mình <3',
+    question: 'Đôi lời trang muốn nói',
     btnReply: 'Gửi cho bạn <3',
-    reply: 'Yêu thì yêu mà không yêu thì yêu <33333333',
+    reply: ' Trên thế giới hơn 7 tỉ người mà sao em thích mỗi mình a Long <3         <3 ',
     mess: 'Mình biết mà 🥰. Yêu bạn nhiều nhiều 😘😘',
-    messDesc: 'Tối nay 7h, mình qua đón đi chơi nha.',
+    messDesc: 'Cùng cháy hết mình cho nhau nha.',
     btnAccept: 'Okiiiii lun <3',
-    messLink: 'https://m.me/dinhcong2k' //link mess của các bạn. VD: https://m.me/dinhcong2k
+    messLink: 'https://m.me/100009306125839' //link mess của các bạn. VD: https://m.me/dinhcong2k
 }
